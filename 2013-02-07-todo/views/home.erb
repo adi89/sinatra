@@ -1,0 +1,15 @@
+
+<h1> The To Do List </h1>
+
+
+
+
+
+<% if @rows.any? %>
+  <% @rows.each do |row| %>
+    <h2> Task: <%= row["task"] %> </h2>
+    <p> <%= row["description"] %> </p>
+  <% end %>
+<% end %>
+
+

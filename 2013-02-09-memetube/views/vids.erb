@@ -1,0 +1,37 @@
+<% @rows.each do|row| %> <%# goes through array. each hash in there is a separate entry in sql w/ all the params %>
+
+<section >
+
+  <h3> <%= row['title'] %> </h3><%# first hash vid title %>
+  <br>
+
+  <form action="/vids/<%= row["id"] %>/delete" method="post">
+
+    <div class="btn-group">
+    <button class= 'btn modify'><a href='/vids/<%= row["id"] %>/edit'>edit </a></button>
+
+    <button class='btn modify'>delete</button>
+  </div>
+  </form>
+
+
+
+<%# we're clicking on a link, so it's a get. you're going to the new page, where you'll edit your file. clicking on links usually is a get. it's not like delete which is inherently posting material %>
+
+ <% (c,d)= row['url'].split('=',2) %>
+
+
+  <iframe id= 'vid' width="400" height="225" src="http://www.youtube.com/embed/<%= d %>" frameborder="0" allowfullscreen></iframe>
+
+<% if row['genre'].length >0 %>
+<p class= 'groupinfo'> Genre: <%= row['genre'] %> </p>
+<% end %>
+
+<% if row['description'].length > 0 %>
+ <p class= 'groupinfo'> Description: <%= row['description'] %></p>
+ <% end %>
+</section>
+
+<% end %>
+
+

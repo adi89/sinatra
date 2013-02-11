@@ -1,0 +1,21 @@
+<h1 id= 'nombre'> C i n e m a t e c h </h1>
+
+<form action= '/navigate' method= 'get'>
+  <input type='text' name='destination'autofocus>
+<button>N a v i g a t e.</button>
+</form>
+
+    <% if @title %>
+
+    <ul>
+    <li> Title: <%= @title %> </li>
+    <li> Year: <%= @year %> </li>
+    <li> Director: <%= @director %> </li>
+    <li> Released: <%= @writers %> </li>
+    <li> Director: <%= @actors %> </li>
+                                </ul>
+
+    <img src= <%= @image %> >
+
+
+    <% end %>

@@ -1,0 +1,39 @@
+
+@import url(http://fonts.googleapis.com/css?family=Iceland);
+
+
+body{
+  background: url(calculator.gif) no-repeat center ;
+  background-color: #00CCFF;
+}
+
+p{
+  color:black;
+  font-size: 20px;
+}
+
+div{
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  line-height: 200px;
+  background-color: CCCCCC;
+  border: 3px solid grey;
+  font-size: 80px;
+  font-family: sans-serif;
+  color: #00FFFF;
+  display: block;
+  border-radius: 25px;
+  padding: 5px;
+  margin: 2px:;
+
+}
+
+#hi{
+  font-size: 40px;
+
+}
+
+h2{
+  font-family: 'Iceland', cursive;
+}

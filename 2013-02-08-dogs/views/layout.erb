@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='/reset.css'>
+    <link rel='stylesheet' href='/style.css'>
+    <title>Dog</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href='/'>Home</a></li>
+        <li><a href='/new'>new dog</a></li>
+        <li><a href='/dogs'>view dogs</a></li>
+
+       <% @nav_rows.each do |row| %>
+       <% if row['breed'].length > 0 %>
+        <li><a href='/dogs/<%= row['breed'] %>'><%= row['breed'] %></a></li>
+        <% end %>
+        <% end %>
+
+      </ul>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

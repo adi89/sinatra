@@ -1,0 +1,95 @@
+@import url(http://fonts.googleapis.com/css?family=Armata);
+
+
+*
+{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  background: url('http://cdn02.cdn.gorillavsbear.net/wp-content/uploads/2011/10/CHROMATICS-KILL-FOR-LOVE-575x575.jpg');
+  background-size: 1400px 1400px;
+}
+
+section {
+  width: 600px;
+  height: 350px;
+  padding: 10px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  border: 3px solid black;
+  background: url('http://www.a-gc.com/images/2012/11/minimalistic-corner-room-backgrounds-3d-HD-Wallpapers.png');
+  font-color: black;
+}
+
+section p{
+  color: #2D366C;
+  font-size: 11px;
+  font-style: bold;
+}
+
+iframe{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#vid{
+
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.groupinfo{
+  clear: both;
+}
+
+.modify{
+  display: inline-block;
+}
+
+form{
+  margin: 0px;
+  text-align: right;
+}
+
+body{
+  font-size: 12px;
+  line-height: 13px;
+}
+
+p{
+  margin: 0 0 5px;
+  color: white;
+  font-family: 'Armata', sans-serif;
+}
+
+h3{
+  margin-left: 90px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #791229;
+
+}
+
+.newform{
+  text-align: center;
+}
+
+.hero-unit{
+  margin-left: auto;
+  margin-right: auto;
+  height: 145px;
+  width: 600px;
+  color: #791229;
+  border: 2.5px solid #791229;
+  background: url('http://bccostudios.com/wp-content/uploads/2011/06/9-hot-hipster-girls-e1307406018272.jpg');
+  opacity: .9;
+}
+

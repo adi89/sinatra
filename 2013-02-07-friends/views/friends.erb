@@ -1,0 +1,26 @@
+
+<h1> The Homies </h1>
+
+
+<% @rows.each do |row| %>
+
+  <h3> <%= row["name"] %> </h3>
+  <span>
+    <p> Age: <%= row["age"] %> </p>
+    <p> Gender: <%= row["gender"] %> </p>
+  </span>
+
+      <div class='friendpic'><img src=<%= row["image"] %>></div>
+    <div class="icons">
+
+
+    <div class='a'><a href=<%= row["twitter"] %>> <img src= '../css/facebook_thumbnail.png'></a></div>
+    <div class='a'><a href=<%= row["facebook"] %>> <img src= '../css/twitter.thumbnail.png'></a></div>
+
+    <div class='a'><a href=<%= row["github"] %>> <img src='../css/github.png'> </a></div>
+
+
+
+  <% end %>
+
+

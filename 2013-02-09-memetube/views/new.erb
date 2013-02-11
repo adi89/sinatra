@@ -1,0 +1,14 @@
+<form class= "newform" method='post' action='<%= @row.nil? ? "/create" : "/vids/#{@row['id']}" %>'>
+    <p> Title </p>
+  <input value='<%= @row['title'] if @row %>' type='text' name='title' autofocus>
+    <br><p>Description</p>
+
+  <input value='<%= @row['description'] if @row %>' type='text' name='description'>
+
+  <br><p>Genre</p>
+  <input value= '<%= @row['genre'] if @row %>' type='text' name='genre'>
+  <br><p>URL</p>
+  <input value= '<%= @row['url'] if @row %>' type='text' name='url'><br>
+  <button class="btn"><%= @row.nil? ? "Post up my vid" : "edit Vid" %></button>
+</form>
+

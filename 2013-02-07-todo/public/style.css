@@ -1,0 +1,18 @@
+body{
+    background-color: white;
+}
+
+
+
+.links{
+  display: inline-block;
+  text-align: center;
+}
+
+nav{
+  text-align: center;
+}
+
+ p #l1 .links{
+  text-align: left;
+}
